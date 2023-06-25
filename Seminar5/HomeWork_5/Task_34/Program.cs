@@ -13,7 +13,7 @@ int[] GetArreys(){
 
 int Positivcount(int[] arr){
     int count = 0;
-    for(int i = 0; i < arr.Length;i++){
+    for(int i = 0; i < arr.Length; i++){
         if(arr[i]%2 == 0){
             count++;
         }
@@ -22,4 +22,4 @@ int Positivcount(int[] arr){
 }
 int[] arr = GetArreys();
 Console.WriteLine(("Мой массив:\t") + string.Join(", ",arr));
-Console.WriteLine($"Колличество четных чисел:\t{Positivcount(GetArreys())}");
+Console.WriteLine($"Колличество четных чисел:\t{Positivcount(arr)}");
