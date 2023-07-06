@@ -1,6 +1,6 @@
 ﻿int[,] GetRandomMatrix(){
-int row = Random.Shared.Next(3, 7);
-int columns = Random.Shared.Next(3, 7);
+int row = Random.Shared.Next(3,7);
+int columns = Random.Shared.Next(3,7);
 int[,] matrix = new int[row, columns];
     for(int i = 0; i < matrix.GetLength(0); i++){
         for(int j = 0; j < matrix.GetLength(1); j++){
@@ -12,9 +12,9 @@ return matrix;
 
 int MatrixElement(int[,] matrix, int row, int col){
     int count = 0;
-    if(matrix.GetLength(0) < row && matrix.GetLength(0) != row){
+    if(matrix.GetLength(0) <= row){
             return 0;
-        } else if(matrix.GetLength(1) < col && matrix.GetLength(1) != col){
+        } else if(matrix.GetLength(1) <= col){
             return 0;
         } else {
     for(int i = 0; i <= row; i++){
