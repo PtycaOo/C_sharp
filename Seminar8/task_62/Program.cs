@@ -30,7 +30,11 @@ void PrintArray(int[,] array) {
 
     for (int i = 0; i < array.GetLength(0); i++) {
         for (int j = 0; j < array.GetLength(1); j++) {
-            Console.Write(array[i, j].ToString().PadLeft(n, ' '));
+            if(i < 10){
+                Console.Write(array[i, j].ToString("00").PadLeft(n, ' '));
+            } else {
+                Console.Write(array[i, j].ToString().PadLeft(n, ' '));
+            }
         }
         Console.WriteLine();
     }
