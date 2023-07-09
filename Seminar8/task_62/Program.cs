@@ -25,7 +25,6 @@
 }
 
 
-// Method to print arrays, pads numbers so they line up in columns
 void PrintArray(int[,] array) {
     int n = (array.GetLength(0) * array.GetLength(1) - 1).ToString().Length + 1;
 
